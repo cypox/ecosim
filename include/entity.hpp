@@ -16,6 +16,8 @@ public:
 
   void consume();
 
+  void step();
+
 private:
   int _id;
   std::string _name;

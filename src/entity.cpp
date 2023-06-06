@@ -20,3 +20,8 @@ void Entity::consume()
 {
   return;
 }
+
+void Entity::step()
+{
+  return;
+}
