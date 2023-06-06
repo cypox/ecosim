@@ -3,6 +3,8 @@
 #include "entity.hpp"
 #include "exchange.hpp"
 
+#include <vector>
+
 
 class World {
 public:

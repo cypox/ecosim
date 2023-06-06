@@ -8,5 +8,9 @@ World::World()
 
 void World::step()
 {
+  for (auto& entity: _entities)
+  {
+    entity.step();
+  }
   return;
 }

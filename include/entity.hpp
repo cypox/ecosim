@@ -1,14 +1,15 @@
 #pragma once
 
-#include "stockpile.hpp"
+#include "exchange.hpp"
 
 #include <string>
 #include <vector>
+#include <unordered_map>
 
 
 class Entity {
 public:
-  Entity();
+  Entity(Exchange&);
 
   void make_order();
 
@@ -21,7 +22,11 @@ public:
 private:
   int _id;
   std::string _name;
-  std::vector<StockpileItem> _storage;
+  std::unordered_map<int, int> _storage;
   double _cash;
   /* EntityType _type; */
+
+  std::unordered_map<int, std::vector<int>> _orders;
+
+  Exchange& _market;
 };
