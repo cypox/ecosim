@@ -11,10 +11,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(${PROJECT_NAME} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 
 add_executable(${PROJECT_NAME}
-  ${CMAKE_CURRENT_SOURCE_DIR}/src/ecosim.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/src/argparse.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/src/entity.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/src/exchange.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/src/order_book.cpp
-  ${CMAKE_CURRENT_SOURCE_DIR}/src/world.cpp
+  src/ecosim.cpp
+  src/argparse.cpp
+  src/entity.cpp
+  src/exchange.cpp
+  src/order_book.cpp
+  src/world.cpp
 )
